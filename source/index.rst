@@ -9,5 +9,6 @@ ToryUX Documentation
 .. toctree::
    :maxdepth: 2
 
-   manual
+   gettingstarted
+   uielements
    classes

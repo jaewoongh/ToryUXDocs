@@ -1,0 +1,593 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>클래스 일람 &mdash; ToryUX 1.3.171215 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="색인"
+              href="genindex.html"/>
+        <link rel="search" title="검색" href="search.html"/>
+    <link rel="top" title="ToryUX 1.3.171215 documentation" href="index.html"/>
+        <link rel="prev" title="UI 프리팹들" href="uielements.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ToryUX
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">시작하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uielements.html">UI 프리팹들</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">클래스 일람</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#cameraeffects">CameraEffects</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#static-properties">Static Properties</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#instance">Instance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#curtainimage">CurtainImage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#curtaincanvasrenderer">CurtainCanvasRenderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#curtainalpha">CurtainAlpha</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#translucentlayer">TranslucentLayer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bloomflashintensity">BloomFlashIntensity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bloomsettings">BloomSettings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vignetteintensity">VignetteIntensity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vignettesettings">VignetteSettings</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#static-methods">Static Methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fadeout">FadeOut</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fadein">FadeIn</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fade">Fade</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#showtranslucentlayer">ShowTranslucentLayer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hidetranslucentlayer">HideTranslucentLayer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#flashbloom">FlashBloom</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#showvignetteeffect">ShowVignetteEffect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hidevignetteeffect">HideVignetteEffect</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#uiorientationsetter">UIOrientationSetter</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#classes-uiorientationsetter-staticproperties">Static Properties</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#currentorientation">CurrentOrientation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#referenceresolution">ReferenceResolution</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#properties">Properties</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#orientation">Orientation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#classes-uiorientationsetter-staticmethods">Static Methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#setorientation">SetOrientation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fliporientation">FlipOrientation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ToryUX</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>클래스 일람</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/classes.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="classes">
+<span id="id1"></span><h1>클래스 일람<a class="headerlink" href="#classes" title="제목 주소">¶</a></h1>
+<hr class="docutils" />
+<div class="section" id="cameraeffects">
+<span id="classes-cameraeffects"></span><h2>CameraEffects<a class="headerlink" href="#cameraeffects" title="제목 주소">¶</a></h2>
+<p>카메라 효과와 관련해 여러 스태틱 메소드들을 제공하는 클래스입니다.
+<a class="reference external" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.html">MonoBehaviour</a> 클래스를 상속합니다.</p>
+<div class="section" id="static-properties">
+<span id="classes-cameraeffects-staticproperties"></span><h3>Static Properties<a class="headerlink" href="#static-properties" title="제목 주소">¶</a></h3>
+<div class="section" id="instance">
+<span id="classes-cameraeffects-staticproperties-instance"></span><h4>Instance<a class="headerlink" href="#instance" title="제목 주소">¶</a></h4>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="n">CameraEffects</span> <span class="n">Instance</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+</div>
+<p><a class="reference internal" href="#classes-cameraeffects"><span class="std std-ref">CameraEffects</span></a> 클래스는 싱글턴으로 동작합니다. 인스턴스를 참조하려면 이 프로퍼티를 사용하세요.</p>
+<hr class="docutils" />
+</div>
+<div class="section" id="curtainimage">
+<span id="classes-cameraeffects-staticproperties-curtainimage"></span><h4>CurtainImage<a class="headerlink" href="#curtainimage" title="제목 주소">¶</a></h4>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="n">Image</span> <span class="n">CurtainImage</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">private</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+</div>
+<p>페이드 효과에 사용되는 <a class="reference external" href="https://docs.unity3d.com/ScriptReference/UI.Image.html">UI.Image</a>입니다. 단순 사용을 위해서는 굳이 변경할 필요 없이 <a class="reference internal" href="#classes-cameraeffects-staticmethods-fadein"><span class="std std-ref">FadeIn</span></a>과 <a class="reference internal" href="#classes-cameraeffects-staticmethods-fadeout"><span class="std std-ref">FadeOut</span></a>을 이용해 주세요.</p>
+<p>기본 색상은 검정입니다. 색을 하양으로 바꾸고 <a class="reference internal" href="#classes-cameraeffects-staticmethods-fadein"><span class="std std-ref">FadeIn</span></a>을 사용하면 카메라 플래시 효과로도 사용할 수 있습니다.</p>
+<div class="admonition note">
+<p class="first admonition-title">주석</p>
+<p class="last">커튼 이미지는 <span class="xref std std-ref">uielements.SettingsUI</span>를 포함한 모든 ToryUX 요소 중 가장 앞에 그려집니다.</p>
+</div>
+<hr class="docutils" />
+</div>
+<div class="section" id="curtaincanvasrenderer">
+<span id="classes-cameraeffects-staticproperties-curtaincanvasrenderer"></span><h4>CurtainCanvasRenderer<a class="headerlink" href="#curtaincanvasrenderer" title="제목 주소">¶</a></h4>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="n">CanvasRenderer</span> <span class="n">CurtainCanvasRenderer</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+</div>
+<p><a class="reference internal" href="#classes-cameraeffects-staticproperties-curtainimage"><span class="std std-ref">CurtainImage</span></a>에 달린 <a class="reference external" href="https://docs.unity3d.com/ScriptReference/CanvasRenderer.html">CanvasRenderer</a>입니다.
+페이드 효과는 내부적으로 이 렌더러의 알파 값을 바꾸는 식으로 구현됩니다.
+특별한 일이 없다면 굳이 손 댈 필요는 없습니다.</p>
+<hr class="docutils" />
+</div>
+<div class="section" id="curtainalpha">
+<span id="classes-cameraeffects-staticproperties-curtainalpha"></span><h4>CurtainAlpha<a class="headerlink" href="#curtainalpha" title="제목 주소">¶</a></h4>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="kt">float</span> <span class="n">CurtainAlpha</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+</div>
+<p><a class="reference internal" href="#classes-cameraeffects-staticproperties-curtainimage"><span class="std std-ref">CurtainImage</span></a>에 달린 <a class="reference external" href="https://docs.unity3d.com/ScriptReference/CanvasRenderer.html">CanvasRenderer</a>의 알파 값입니다.
+현재 페이드 효과가 얼마나 진행되었는지 알기 위해, 또는 임의의 효과를 구현하기 위해 접근할 수 있습니다.</p>
+<hr class="docutils" />
+</div>
+<div class="section" id="translucentlayer">
+<span id="classes-cameraeffects-staticproperties-translucentlayer"></span><h4>TranslucentLayer<a class="headerlink" href="#translucentlayer" title="제목 주소">¶</a></h4>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="n">TranslucentLayer</span> <span class="n">TranslucentLayer</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+</div>
+<p><span class="xref std std-ref">uielements.TitleUI</span>나 <span class="xref std std-ref">uielements.ResultUI</span> 등에서 UI 외 요소를 블러 처리하는데 사용되는 <a class="reference external" href="http://tid.readthedocs.io/en/latest/index.html">TranslucentLayer</a>입니다.</p>
+<hr class="docutils" />
+</div>
+<div class="section" id="bloomflashintensity">
+<span id="classes-cameraeffects-staticproperties-bloomflashintensity"></span><h4>BloomFlashIntensity<a class="headerlink" href="#bloomflashintensity" title="제목 주소">¶</a></h4>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="kt">float</span> <span class="n">BloomFlashIntensity</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="m">5f</span>
+</pre></div>
+</div>
+<p><a class="reference internal" href="#classes-cameraeffects-staticmethods-flashbloom"><span class="std std-ref">FlashBloom</span></a> 효과에 적용될 블룸의 강도입니다.
+기본으로 설정한 블룸 값에 이 값이 순간적으로 더해졌다 원래대로 돌아오는 식으로 동작합니다.</p>
+<hr class="docutils" />
+</div>
+<div class="section" id="bloomsettings">
+<span id="classes-cameraeffects-staticproperties-bloomsettings"></span><h4>BloomSettings<a class="headerlink" href="#bloomsettings" title="제목 주소">¶</a></h4>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="n">BloomModel</span><span class="p">.</span><span class="n">Settings</span> <span class="n">BloomSettings</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+</div>
+<p>필요할 경우 임의로 <a class="reference external" href="https://docs.unity3d.com/Manual/PostProcessing-Bloom.html">블룸 설정</a>을 건드릴 수 있도록 열어 두었습니다.</p>
+<hr class="docutils" />
+</div>
+<div class="section" id="vignetteintensity">
+<span id="classes-cameraeffects-staticproperties-vignetteintensity"></span><h4>VignetteIntensity<a class="headerlink" href="#vignetteintensity" title="제목 주소">¶</a></h4>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="kt">float</span> <span class="n">VignetteIntensity</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="m">0.45f</span>
+</pre></div>
+</div>
+<p><a class="reference internal" href="#classes-cameraeffects-staticmethods-showvignetteeffect"><span class="std std-ref">ShowVignetteEffect</span></a>에 적용될 비네팅의 강도입니다.
+기본으로 설정된 비네팅 값에서 이 값으로 변화하는 식으로 동작합니다.
+<a class="reference internal" href="#classes-cameraeffects-staticmethods-hidevignetteeffect"><span class="std std-ref">HideVignetteEffect</span></a>를 호출하면 이 값에서 원래 설정돼있던 비네팅 값으로 변화합니다.</p>
+<hr class="docutils" />
+</div>
+<div class="section" id="vignettesettings">
+<span id="classes-cameraeffects-staticproperties-vignettesettings"></span><h4>VignetteSettings<a class="headerlink" href="#vignettesettings" title="제목 주소">¶</a></h4>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="n">VignetteModel</span><span class="p">.</span><span class="n">Settings</span> <span class="n">VignetteSettings</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+</div>
+<p>필요할 경우 임의로 <a class="reference external" href="https://docs.unity3d.com/Manual/PostProcessing-Vignette.html">비네팅 설정</a>을 건드릴 수 있도록 열어 두었습니다.</p>
+<hr class="docutils" />
+</div>
+</div>
+<div class="section" id="static-methods">
+<span id="classes-cameraeffects-staticmethods"></span><h3>Static Methods<a class="headerlink" href="#static-methods" title="제목 주소">¶</a></h3>
+<div class="section" id="fadeout">
+<span id="classes-cameraeffects-staticmethods-fadeout"></span><h4>FadeOut<a class="headerlink" href="#fadeout" title="제목 주소">¶</a></h4>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">FadeOut</span><span class="p">(</span><span class="kt">float</span> <span class="n">duration</span> <span class="p">=</span> <span class="m">1f</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">ignoreTimeScale</span> <span class="p">=</span> <span class="k">false</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>페이드 아웃 효과를 냅니다. <a class="reference internal" href="#classes-cameraeffects-staticproperties-curtaincanvasrenderer"><span class="std std-ref">CurtainCanvasRenderer</span></a>의 알파 값이 0에서 1로 변화합니다.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">duration:</th><td class="field-body">전환 시간을 설정할 수 있습니다.</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">ignoreTimeScale:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">게임 시간을 사용할지 실제 시간을 사용할지 설정할 수 있습니다.</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+</div>
+<div class="section" id="fadein">
+<span id="classes-cameraeffects-staticmethods-fadein"></span><h4>FadeIn<a class="headerlink" href="#fadein" title="제목 주소">¶</a></h4>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">FadeIn</span><span class="p">(</span><span class="kt">float</span> <span class="n">duration</span> <span class="p">=</span> <span class="m">1f</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">ignoreTimeScale</span> <span class="p">=</span> <span class="k">false</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>페이드 인 효과를 냅니다. <a class="reference internal" href="#classes-cameraeffects-staticproperties-curtaincanvasrenderer"><span class="std std-ref">CurtainCanvasRenderer</span></a>의 알파 값이 1에서 0으로 변화합니다.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">duration:</th><td class="field-body">전환 시간을 설정할 수 있습니다.</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">ignoreTimeScale:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">게임 시간을 사용할지 실제 시간을 사용할지 설정할 수 있습니다.</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+</div>
+<div class="section" id="fade">
+<span id="classes-cameraeffects-staticmethods-fade"></span><h4>Fade<a class="headerlink" href="#fade" title="제목 주소">¶</a></h4>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Fade</span><span class="p">(</span><span class="kt">float</span> <span class="n">targetAlpha</span><span class="p">,</span> <span class="kt">float</span> <span class="n">duration</span> <span class="p">=</span> <span class="m">1f</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">ignoreTimeScale</span> <span class="p">=</span> <span class="k">false</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>현재 <a class="reference internal" href="#classes-cameraeffects-staticproperties-curtaincanvasrenderer"><span class="std std-ref">CurtainCanvasRenderer</span></a>의 알파 값에서 특정한 알파 값으로 변화하는 효과를 냅니다.
+진행중인 페이드 인/아웃 효과를 도중에 취소하는 데에 유용합니다.</p>
+<hr class="docutils" />
+</div>
+<div class="section" id="showtranslucentlayer">
+<span id="classes-cameraeffects-staticmethods-showtranslucentlayer"></span><h4>ShowTranslucentLayer<a class="headerlink" href="#showtranslucentlayer" title="제목 주소">¶</a></h4>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">ShowTranslucentLayer</span><span class="p">(</span><span class="kt">float</span> <span class="n">strength</span> <span class="p">=</span> <span class="p">-</span><span class="m">1f</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>메인 카메라를 블러시키는 레이어를 활성화합니다.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">strength:</th><td class="field-body">블러의 강도를 설정합니다.
+숫자가 클수록 더욱 덩어리집니다.
+음수 값을 건넬 경우 인스펙터 창에서 설정한 값으로(기본 30) 적용됩니다.</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+</div>
+<div class="section" id="hidetranslucentlayer">
+<span id="classes-cameraeffects-staticmethods-hidetranslucentlayer"></span><h4>HideTranslucentLayer<a class="headerlink" href="#hidetranslucentlayer" title="제목 주소">¶</a></h4>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">HideTranslucentLayer</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>메인 카메라를 블러시키는 레이어를 비활성화합니다.</p>
+<hr class="docutils" />
+</div>
+<div class="section" id="flashbloom">
+<span id="classes-cameraeffects-staticmethods-flashbloom"></span><h4>FlashBloom<a class="headerlink" href="#flashbloom" title="제목 주소">¶</a></h4>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">FlashBloom</span><span class="p">(</span><span class="kt">float</span> <span class="n">duration</span> <span class="p">=</span> <span class="m">1f</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>블룸 터뜨리는 효과를 냅니다. 화면 전환에 유용합니다.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">duration:</th><td class="field-body">효과의 지속 시간을 설정할 수 있습니다.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">주석</p>
+<p class="last">이 효과는 <a class="reference external" href="https://docs.unity3d.com/Manual/PostProcessing-Bloom.html">블룸 설정</a> 중 <code class="docutils literal"><span class="pre">intensity</span></code> 값만 사용합니다.
+세부 컨트롤이 필요하면 <a class="reference internal" href="#classes-cameraeffects-staticproperties-bloomsettings"><span class="std std-ref">BloomSettings</span></a>를 만져 주세요.</p>
+</div>
+<hr class="docutils" />
+</div>
+<div class="section" id="showvignetteeffect">
+<span id="classes-cameraeffects-staticmethods-showvignetteeffect"></span><h4>ShowVignetteEffect<a class="headerlink" href="#showvignetteeffect" title="제목 주소">¶</a></h4>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">ShowVignetteEffect</span><span class="p">(</span><span class="kt">float</span> <span class="n">duration</span> <span class="p">=</span> <span class="m">0.1f</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>비네팅 효과를 냅니다.
+<a class="reference internal" href="#classes-cameraeffects-staticproperties-vignetteintensity"><span class="std std-ref">VignetteIntensity</span></a> 값을 바꿔 정도를 조절할 수 있습니다.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">duration:</th><td class="field-body">비네팅 효과가 나타나는 시간을 설정할 수 있습니다.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">주석</p>
+<p class="last">이 효과는 <a class="reference external" href="https://docs.unity3d.com/Manual/PostProcessing-Vignette.html">비네팅 설정</a> 중 <code class="docutils literal"><span class="pre">intensity</span></code> 값만 사용합니다.
+세부 컨트롤이 필요하면 <a class="reference internal" href="#classes-cameraeffects-staticproperties-vignettesettings"><span class="std std-ref">VignetteSettings</span></a>를 만져 주세요.</p>
+</div>
+<hr class="docutils" />
+</div>
+<div class="section" id="hidevignetteeffect">
+<span id="classes-cameraeffects-staticmethods-hidevignetteeffect"></span><h4>HideVignetteEffect<a class="headerlink" href="#hidevignetteeffect" title="제목 주소">¶</a></h4>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">HideVignetteEffect</span><span class="p">(</span><span class="kt">float</span> <span class="n">duration</span> <span class="p">=</span> <span class="m">0.1f</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>비네팅 효과를 끕니다.
+<a class="reference internal" href="#classes-cameraeffects-staticmethods-showvignetteeffect"><span class="std std-ref">ShowVignetteEffect</span></a>를 호출하기 전에 사용하던 비네팅 값이 있다면 그 값으로 되돌아갑니다.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">duration:</th><td class="field-body">비네팅 효과가 사라지는 시간을 설정할 수 있습니다.</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+</div>
+</div>
+</div>
+<div class="section" id="uiorientationsetter">
+<span id="classes-uiorientationsetter"></span><h2>UIOrientationSetter<a class="headerlink" href="#uiorientationsetter" title="제목 주소">¶</a></h2>
+<p>ToryUX의 오리엔테이션과 관련해 몇 가지 편의 기능을 제공하는 스크립트입니다.
+<a class="reference external" href="https://answers.unity.com/comments/445235/view.html">MonoCollection&lt;T&gt;</a> 클래스를 상속합니다.</p>
+<div class="section" id="classes-uiorientationsetter-staticproperties">
+<span id="id2"></span><h3>Static Properties<a class="headerlink" href="#classes-uiorientationsetter-staticproperties" title="제목 주소">¶</a></h3>
+<div class="section" id="currentorientation">
+<span id="classes-uiorientationsetter-staticproperties-currentorientation"></span><h4>CurrentOrientation<a class="headerlink" href="#currentorientation" title="제목 주소">¶</a></h4>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="n">UIOrientation</span> <span class="n">CurrentOrientation</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+</div>
+<p>현재 <code class="docutils literal"><span class="pre">UIOrientation</span></code> 값을 확인할 수 있습니다.</p>
+<div class="admonition note">
+<p class="first admonition-title">주석</p>
+<div class="last highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">enum</span> <span class="n">UIOrientation</span>
+<span class="p">{</span>
+   <span class="n">Unknown</span><span class="p">,</span>
+   <span class="n">Landscape</span><span class="p">,</span>
+   <span class="n">LandscapeUpsideDown</span><span class="p">,</span>
+   <span class="n">PortraitLeft</span><span class="p">,</span>
+   <span class="n">PortraitRight</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<hr class="docutils" />
+</div>
+<div class="section" id="referenceresolution">
+<span id="classes-uiorientationsetter-staticproperties-referenceresolution"></span><h4>ReferenceResolution<a class="headerlink" href="#referenceresolution" title="제목 주소">¶</a></h4>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="n">Vector2</span> <span class="n">ReferenceResolution</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+</div>
+<p><a class="reference internal" href="#classes-uiorientationsetter"><span class="std std-ref">UIOrientationSetter</span></a>의 부모가 가진 <a class="reference external" href="https://docs.unity3d.com/ScriptReference/UI.CanvasScaler.html">CanvasScaler</a>의 <code class="docutils literal"><span class="pre">referenceResolution</span></code> 값을 돌려줍니다.</p>
+<div class="admonition attention">
+<p class="first admonition-title">주의</p>
+<p>씬 안에 <a class="reference internal" href="#classes-uiorientationsetter"><span class="std std-ref">UIOrientationSetter</span></a>가 둘 이상 존재할 경우 (예컨대 <a class="reference internal" href="gettingstarted.html#gettingstarted-starting-canvasbased"><span class="std std-ref">캔버스 베이스 게임의 경우</span></a>) 모든 부모 <a class="reference external" href="https://docs.unity3d.com/ScriptReference/UI.CanvasScaler.html">CanvasScaler</a>의 <code class="docutils literal"><span class="pre">referenceResolution</span></code> 값이 같아야 정상 동작합니다.</p>
+<p class="last">만약 제대로 설정돼 있지 않더라도 아무런 오류를 띄우지 않으니 주의해 주세요.</p>
+</div>
+<hr class="docutils" />
+</div>
+</div>
+<div class="section" id="properties">
+<span id="classes-uiorientationsetter-properties"></span><h3>Properties<a class="headerlink" href="#properties" title="제목 주소">¶</a></h3>
+<div class="section" id="orientation">
+<span id="classes-uiorientationsetter-properties-orientation"></span><h4>Orientation<a class="headerlink" href="#orientation" title="제목 주소">¶</a></h4>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="n">UIOrientation</span> <span class="n">Orientation</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+</div>
+<p>현재 <code class="docutils literal"><span class="pre">UIOrientation</span></code> 값을 읽거나 지정할 수 있습니다.</p>
+<div class="admonition attention">
+<p class="first admonition-title">주의</p>
+<p>이 프로퍼티는 개별 <a class="reference internal" href="#classes-uiorientationsetter"><span class="std std-ref">UIOrientationSetter</span></a> 인스턴스의 값입니다.</p>
+<p class="last">씬 안에 <a class="reference internal" href="#classes-uiorientationsetter"><span class="std std-ref">UIOrientationSetter</span></a>가 둘 이상 존재할 경우 (예컨대 <a class="reference internal" href="gettingstarted.html#gettingstarted-starting-canvasbased"><span class="std std-ref">캔버스 베이스 게임의 경우</span></a>) 이 프로퍼티에 수동으로 값을 넣어도 다른 <a class="reference internal" href="#classes-uiorientationsetter"><span class="std std-ref">UIOrientationSetter</span></a>에는 적용되지 않으므로, <a class="reference internal" href="#classes-uiorientationsetter-staticmethods-setorientation"><span class="std std-ref">SetOrientation</span></a> 스태틱 메소드를 사용해 주세요.</p>
+</div>
+<hr class="docutils" />
+</div>
+</div>
+<div class="section" id="classes-uiorientationsetter-staticmethods">
+<span id="id3"></span><h3>Static Methods<a class="headerlink" href="#classes-uiorientationsetter-staticmethods" title="제목 주소">¶</a></h3>
+<div class="section" id="setorientation">
+<span id="classes-uiorientationsetter-staticmethods-setorientation"></span><h4>SetOrientation<a class="headerlink" href="#setorientation" title="제목 주소">¶</a></h4>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">SetOrientation</span><span class="p">(</span><span class="n">UIOrientation</span> <span class="n">newOrientation</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>새 <code class="docutils literal"><span class="pre">UIOrientation</span></code> 값으로 설정합니다.
+씬 안에 <a class="reference internal" href="#classes-uiorientationsetter"><span class="std std-ref">UIOrientationSetter</span></a>가 둘 이상 존재할 경우 모든 인스턴스에 적용됩니다.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">newOrientation:</th><td class="field-body">새로 사용할 <code class="docutils literal"><span class="pre">UIOrientation</span></code> 값을 지정합니다.</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+</div>
+<div class="section" id="fliporientation">
+<span id="classes-uiorientationsetter-staticmethods-fliporientation"></span><h4>FlipOrientation<a class="headerlink" href="#fliporientation" title="제목 주소">¶</a></h4>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">FlipOrientation</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>화면을 뒤집습니다.
+씬 안에 <a class="reference internal" href="#classes-uiorientationsetter"><span class="std std-ref">UIOrientationSetter</span></a>가 둘 이상 존재할 경우 모든 인스턴스에 적용됩니다.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="uielements.html" class="btn btn-neutral" title="UI 프리팹들" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Jaewoong Hwang.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.3.171215',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

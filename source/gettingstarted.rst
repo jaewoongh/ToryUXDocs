@@ -1,0 +1,81 @@
+.. _gettingstarted:
+
+시작하기
+========
+
+.. |br| raw:: html
+
+   <br />
+
+
+.. _gettingstarted.importing:
+
+불러오기
+--------
+
+#. 유니티 버전 2017 이상에서 동작합니다.
+#. 에셋 스토어에서 `Post Processing Stack`__ 을 임포트합니다.
+#. 최신 버전의 ToryUX 유니티 패키지를 실행해 프로젝트에 얹습니다.
+
+.. __: https://www.assetstore.unity3d.com/kr/#!/content/83912
+
+.. note::
+
+   블러 효과를 위해 `Translucent Image`__ 에셋 번들에 의존합니다.\ |br|
+   모바일에서도 퍼포먼스 부담 없이 제대로 큰 덩어리 블러 주는 보기 드문 에셋이니 참고 씁시다.
+
+   .. __: https://www.assetstore.unity3d.com/kr/#!/content/78464
+
+
+.. _gettingstarted.starting:
+
+사용하기
+--------
+
+.. _gettingstarted.starting.standard:
+
+일반적인 경우
+^^^^^^^^^^^^^
+
+   *베어라이드*\ , *업업업* 등
+
+#. Project 탭에서 ``ToryUX/Prefabs/_ToryUX.prefab``\ 을 Hierarchy 탭으로 끌어와 씬에 얹습니다.
+
+#. 끌어온 ``_ToryUX`` 게임오브젝트를 선택한 뒤 Inspector 탭에서 ``CameraEffects`` 컴포넌트를 찾아 ``Main Camera`` 필드에 씬 메인 카메라를 끌어 넣어 줍니다.
+
+#. Project 탭 ``ToryUX/Prefabs`` 폴더 안 필요한 UI 요소들을 Hierarchy 탭 ``_ToryUX/Canvas/ToryUX`` 밑으로 끌어 넣습니다.
+
+   .. attention::
+
+      ToryUX 관련 많은 스크립트들이 ``MonoBehaviour.Awake()`` 콜에 의존해 초기화합니다. 실행 전 임의로 게임오브젝트들을 비활성화할 경우 정상 동작하지 않을 수 있습니다.
+
+#. 캔버스를 사용해야 할 경우 따로 만들지 말고 Hierarchy 탭 ``_ToryUX/Canvas/ToryUX``\ 밑으로 넣어 주세요.
+
+
+.. _gettingstarted.starting.canvasbased:
+
+캔버스 베이스 게임의 경우
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   *버거 타워*\ , *캔디 몬스터* 등
+
+프로젝트에서 사용할 모든 캔버스 요소들을 원칙적으로 Hierarchy상 ``_ToryUX/Canvas/ToryUX`` 밑으로 들어가야 합니다.
+하지만 게임 자체가 캔버스에서 동작하는 경우 UI 관련 캔버스 요소와 게임 관련 캔버스 요소를 구별할 필요가 있습니다.
+
+#. Project 탭 ``ToryUX/Prefabs/GameCanvas.prefab``\ 을 Hierarchy 탭으로 끌어다 넣습니다.
+#. 게임 관련 캔버스 요소들은 모두 Hierarchy ``GameCanvas/OrientationSetter`` 밑으로 만들기 시작해 주세요.
+
+ToryUX나 기타 UI 관련 캔버스 요소들은 여전히 ``_ToryUX/Canvas/ToryUX`` 아래로 넣어 사용하시면 됩니다.
+
+
+.. _gettingstarted.starting.notitlenorresult:
+
+타이틀과 결과 창이 없는 게임의 경우
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   *크레용 프린세스* 등
+
+``TitleUI``\ 와 ``ResultUI``\ 를 사용하지 않을 경우 `Translucent Image`_ 의존성을 포함해 ToryUX의 많은 부분을 덜어낼 수 있습니다.
+따로 해당 버전을 배포하고 있지는 않지만 필요하다면 문의해 주세요.
+
+.. _`Translucent Image`: https://www.assetstore.unity3d.com/kr/#!/content/78464
